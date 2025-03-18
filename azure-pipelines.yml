@@ -21,6 +21,6 @@ steps:
     
     # run the Terraform
     terraform init
-    terraform apply -var tenancy_ocid="$(TENANCY)" -var compartment_ocid="$(COMPARTMENT)"
+    terraform apply -var tenancy_ocid="$(TENANCY)" -var compartment_ocid="$(COMPARTMENT)" --auto-approve
 
   displayName: 'Run Terraform apply from repo as instance principal'
