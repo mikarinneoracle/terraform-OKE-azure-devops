@@ -15,5 +15,5 @@ provider "oci" {
 
 provider "oci" {
   alias = "home"
-  region = one(data.oci_identity_region_subscriptions.home.region_subscriptions[*].region_name)
+  region = var.region
 }
